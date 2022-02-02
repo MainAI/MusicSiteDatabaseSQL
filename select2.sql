@@ -47,11 +47,11 @@ select distinct s.name from singer s
 
 select distinct a.id from album a
 	left join track t on a.id = t.album_id 
-    group by a.id
-    having count(t.id) = (
-        select count(t.id) from track t
-        group by t.album_id 
-        order by count(t.id)
-        limit 1);
+	group by a.id
+	having count(t.id) = (
+		select count(t.id) from track t
+		group by t.album_id 
+		order by count(t.id)
+		limit 1);
 
 	
