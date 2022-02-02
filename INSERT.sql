@@ -16,7 +16,7 @@ insert into genre (id, name)
 	(5, 'rock');
 	
 insert into album (id, name, year_release)
-	values (1, '25', 2015),
+	values (1, '25', 2020),
 	(2, 'when we all fall asleep', 2019),
 	(3, 'v', 2014),
 	(4, 'jordi', 2021),
@@ -32,7 +32,7 @@ insert into track (id, name, duration, album_id)
 	(4, 'hello', '4.55', 1),
 	(5, 'i miss you', '5.49', 1),
 	(6, 'the happiest hour', '3.29', 8),
-	(7, 'intro', '3.33', 6),
+	(7, 'intro', '2.45', 6),
 	(8, 'wife 14', '4.39', 8),
 	(9, 'lost', '2.53', 4),
 	(10, 'my echo', '2.59', 4),
@@ -71,7 +71,8 @@ insert into albumsinger (id, singer_id, album_id)
 	(4, 3, 4),
 	(5, 5, 2),
 	(6, 7, 7),
-	(7, 6, 6);
+	(7, 6, 6),
+	(8, 1, 5);
 
 insert into collectiontrack (id, collection_id, track_id)
 	values (1, 1, 2),
